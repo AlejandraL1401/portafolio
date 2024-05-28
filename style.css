@@ -1,0 +1,203 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Navbar style*/
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(151, 80, 218);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav.active a {
+    color: #000;
+}
+
+
+.nav a:hover {
+    color: #810c8b;
+}
+
+.nav h1{
+    margin-right: 50px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/*Intro de inicio style*/
+.intro {
+    background-image: url('https://wallpaperaccess.com/full/3239480.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: -2;
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 0, 78, 0.5);
+    z-index: -1;
+}
+
+.intro h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.intro p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/*Contenido general*/
+.content{
+    padding: 50px;
+    background-color: #f3def5cc;
+}
+
+.content h1 {
+    font-size: 50px;
+    padding: 40px;
+    text-align: center;
+}
+
+/*Contenido (proyectos)*/
+.proyects {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1230px) {
+    .proyects{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.proyects img{
+    -ms-flex-item-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.proyects a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.proyect1{
+    padding: 10px;
+    background-color: #b55df0;
+    border-radius: 50px;
+}
+
+.proyect2{
+    padding: 10px;
+    background-color: #b55df0;
+    border-radius: 50px;
+}
+
+.proyect3{
+    padding: 10px;
+    background-color: #b55df0;
+    border-radius: 50px;
+}
+
+.proyect4{
+    padding: 10px;
+    background-color: #b55df0;
+    border-radius: 50px;
+}
+
+.pro{
+    padding: 20px;
+    text-align: center;
+}
+.pro .but {
+    background: #b55df0;
+    border-radius: 999px;
+    box-shadow: #a95df0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 16px 36px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+/*Pie de pagina style*/
+.pie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    background-color: #810c8b;
+    padding: 30px;
+    color: #fff;
+    border: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.pie a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.pie img{
+    width: 20px;
+    height: 20px;
+}
+
+.pie ul{
+
+    list-style: none;
+}
+.pie li{
+    padding: 10px;
+    font-size: x-large;
+}
